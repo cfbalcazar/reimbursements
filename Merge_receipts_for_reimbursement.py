@@ -5,7 +5,7 @@ from PyPDF2 import PdfMerger, PdfFileReader, PdfFileWriter
 from PIL import Image 
 
 # ====================================================================
-# Path - the py-file should go where your folder with the receipts is
+# Path - the py-file should go where your folder where the receipts are
 path = os.path.dirname(__file__)
 
 #====================================================================
