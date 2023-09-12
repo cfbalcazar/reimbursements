@@ -31,7 +31,7 @@ except:
 # Clean rideshare receipts
 rideshare = [f for f in os.listdir(path) if 'Uber' in f]
 
-# To help tabula we need to create a subsetted pdf
+# Subsetting pdfs and merging
 writer = PdfFileWriter()
 for receipt in rideshare:
     try:
@@ -40,7 +40,7 @@ for receipt in rideshare:
     except:
         pass
     
-# Saving the extracted pages with the table
+# Saving the extracted pages
 with open(path+"ridshare_receipts.pdf", 'wb') as output:
     writer.write(output)
 
